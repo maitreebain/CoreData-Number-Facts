@@ -52,4 +52,47 @@ class CoreDataManager{
         
         return users
     }
+    
+    
+    public func createPost(for user: User, numberFact: Double, title: String) -> Post {
+        let post = Post(entity: Post.entity(), insertInto: context)
+        post.user = user
+        post.number = numberFact
+        post.title = title
+        
+        do {
+            try context.save()
+        } catch {
+            print("error saving post: \(error)")
+        }
+        
+        return post
+    }
+    
+    public func fetchPost() -> [Post]{
+        
+        do {
+            posts = try context.fetch(Post.fetchRequest())
+        } catch {
+            print("error fetching posts: \(error)")
+        }
+        
+        return posts
+    }
+    
+    @discardableResult
+    private func deletePost(_ post: Post) -> Bool{
+        var wasDeleted = false
+        context.delete(post)
+        
+        do{
+            try context.save()
+            wasDeleted = true
+        } catch {
+            print("could not delete post: \(error)")
+        }
+        
+        return wasDeleted
+    }
+    
 }
