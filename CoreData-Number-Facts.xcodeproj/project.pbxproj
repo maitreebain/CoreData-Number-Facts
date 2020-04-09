@@ -14,11 +14,14 @@
 		8003D9E7243E3775005BC871 /* CoreData_Number_Facts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9E5243E3775005BC871 /* CoreData_Number_Facts.xcdatamodeld */; };
 		8003D9E9243E3779005BC871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8003D9E8243E3779005BC871 /* Assets.xcassets */; };
 		8003D9EC243E3779005BC871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8003D9EA243E3779005BC871 /* LaunchScreen.storyboard */; };
-		8003D9F6243E4363005BC871 /* LocalUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9F5243E4363005BC871 /* LocalUsers.swift */; };
-		8003D9F8243E436C005BC871 /* LocalPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9F7243E436C005BC871 /* LocalPosts.swift */; };
 		8003D9FB243E4395005BC871 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9FA243E4395005BC871 /* CreatePostViewController.swift */; };
 		8003D9FD243E43BC005BC871 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9FC243E43BC005BC871 /* CreateUserViewController.swift */; };
 		8003D9FF243E43C9005BC871 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8003D9FE243E43C9005BC871 /* UsersViewController.swift */; };
+		80A86558243F755700F0D3BE /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A86554243F755700F0D3BE /* User+CoreDataClass.swift */; };
+		80A8655A243F755700F0D3BE /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A86556243F755700F0D3BE /* Post+CoreDataClass.swift */; };
+		80A86562243F78A700F0D3BE /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A86560243F78A700F0D3BE /* Post+CoreDataProperties.swift */; };
+		80A86563243F78A700F0D3BE /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A86561243F78A700F0D3BE /* User+CoreDataProperties.swift */; };
+		80A86565243F7D9A00F0D3BE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A86564243F7D9A00F0D3BE /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +34,14 @@
 		8003D9E8243E3779005BC871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8003D9EB243E3779005BC871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8003D9ED243E3779005BC871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8003D9F5243E4363005BC871 /* LocalUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUsers.swift; sourceTree = "<group>"; };
-		8003D9F7243E436C005BC871 /* LocalPosts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPosts.swift; sourceTree = "<group>"; };
 		8003D9FA243E4395005BC871 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		8003D9FC243E43BC005BC871 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		8003D9FE243E43C9005BC871 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		80A86554243F755700F0D3BE /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80A86556243F755700F0D3BE /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80A86560243F78A700F0D3BE /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		80A86561243F78A700F0D3BE /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		80A86564243F7D9A00F0D3BE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +80,6 @@
 				8003D9F3243E431D005BC871 /* Controllers */,
 				8003D9F4243E434D005BC871 /* Supporting files */,
 				8003D9ED243E3779005BC871 /* Info.plist */,
-				8003D9E5243E3775005BC871 /* CoreData_Number_Facts.xcdatamodeld */,
 			);
 			path = "CoreData-Number-Facts";
 			sourceTree = "<group>";
@@ -103,8 +108,12 @@
 		8003D9F9243E4372005BC871 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8003D9F5243E4363005BC871 /* LocalUsers.swift */,
-				8003D9F7243E436C005BC871 /* LocalPosts.swift */,
+				8003D9E5243E3775005BC871 /* CoreData_Number_Facts.xcdatamodeld */,
+				80A86560243F78A700F0D3BE /* Post+CoreDataProperties.swift */,
+				80A86561243F78A700F0D3BE /* User+CoreDataProperties.swift */,
+				80A86554243F755700F0D3BE /* User+CoreDataClass.swift */,
+				80A86556243F755700F0D3BE /* Post+CoreDataClass.swift */,
+				80A86564243F7D9A00F0D3BE /* CoreDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,12 +192,15 @@
 				8003D9E1243E3775005BC871 /* PostViewController.swift in Sources */,
 				8003D9FB243E4395005BC871 /* CreatePostViewController.swift in Sources */,
 				8003D9E7243E3775005BC871 /* CoreData_Number_Facts.xcdatamodeld in Sources */,
+				80A86562243F78A700F0D3BE /* Post+CoreDataProperties.swift in Sources */,
 				8003D9FD243E43BC005BC871 /* CreateUserViewController.swift in Sources */,
 				8003D9DD243E3775005BC871 /* AppDelegate.swift in Sources */,
+				80A86565243F7D9A00F0D3BE /* CoreDataManager.swift in Sources */,
 				8003D9DF243E3775005BC871 /* SceneDelegate.swift in Sources */,
-				8003D9F6243E4363005BC871 /* LocalUsers.swift in Sources */,
+				80A86563243F78A700F0D3BE /* User+CoreDataProperties.swift in Sources */,
+				80A86558243F755700F0D3BE /* User+CoreDataClass.swift in Sources */,
+				80A8655A243F755700F0D3BE /* Post+CoreDataClass.swift in Sources */,
 				8003D9FF243E43C9005BC871 /* UsersViewController.swift in Sources */,
-				8003D9F8243E436C005BC871 /* LocalPosts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
